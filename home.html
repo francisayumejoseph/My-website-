@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Francis Ayume Joseph</title>
+   <link rel="shortcut icon" href="profile.jpg" type="image/x-icon">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d6efd;
+      color: white;
+      text-align: center;
+      padding-top: 100px;
+      background-image: url(bg.jpeg);
+    }
+
+    #Box {
+      display: flex;
+      background: rgb(51, 170, 170);
+      color: rgb(221, 230, 230);
+      width: 300px;
+      margin: 0 auto;
+      padding: 0px;
+      border-radius: 15px;
+      box-shadow: 5px 4px 10px rgba(58, 120, 201, 0.3);
+      animation: pop 0.5s ease-in-out;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    button {
+      margin-top: 10px;
+      background: #0d6efd;
+      color: white;
+      border:1px solid paleturquoise;
+      padding: 5px 15px;
+      border-radius: 10px;
+      cursor: context-menu;
+    }
+  </style>
+</head>
+<body>
+  <div id="Box">
+    <h3>Welcome👋</h3>
+    <p>Enjoy exploring my website!</p>
+   <a href="file:///C:/Users/hp/Desktop/ayume/index.html"><button onclick="closeBox()">Close</button></a>
+  </div>
+
+  <script>
+    window.onload = function() {
+      setTimeout(() => {
+        document.getElementById("Box").style.display = "block";
+      }, 1000);
+    }
+
+    function closeBox() {
+      document.getElementById("Box").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
